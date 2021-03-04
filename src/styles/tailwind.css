@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .bg-size-small {
+      background-size: 30%;
+    }
+    .bg-size-large {
+      background-size: 10%;
+    }
+  }
+
+  @variants hover {
+    .text-glow {
+      text-shadow: 0 0 80px rgb(192 219 255 / 65%), 0 0 32px rgb(65 120 255 / 20%);
+    }
+
+    .text-glow-hard {
+      text-shadow: 0 0 24px rgb(192 219 255 / 95%), 0 0 8px rgb(65 120 255 / 10%);
+    }
+
+    .content-glow {
+      filter: drop-shadow(0 0 80px rgb(192 219 255 / 65%)) drop-shadow(0 0 32px rgb(65 120 255 / 20%));
+    }
+
+    .content-glow-hard {
+      filter: drop-shadow(0 0 24px rgb(192 219 255 / 85%)) drop-shadow(0 0 8px rgb(65 120 255 / 10%));
+    }
+
+    .box-glow {
+      box-shadow: 0 0 80px rgb(192 219 255 / 50%), 0 0 32px rgb(65 120 255 / 10%);
+    }
+
+    .bg-gradient {
+      background: linear-gradient(45deg, #9e87c9, #ab6cba, #706393, #587ae2, #7ac3f4);
+    }
+  }
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
