@@ -96,7 +96,7 @@ export default function Intro() {
               )}
             </div>
           </div>
-          <div className="mt-16">
+          {/* <div className="mt-16">
             <LinkButton
               className="text-glow box-glow"
               href="https://zine.wilderworld.com/subscribe/"
@@ -113,7 +113,7 @@ export default function Intro() {
             >
               Buy LOOT
             </LinkButton>
-          </div>
+          </div> */}
         </div>
       </Fade>
     </Section>

@@ -10,7 +10,7 @@ export default function Footer() {
               <div>
                 {/* <h4 className="text-gray-400 text-sm font-semibold tracking-wider leading-5 uppercase">Solutions</h4> */}
                 <ul className="mt-4 space-y-4">
-                  <li>
+                  {/* <li>
                     <a
                       href="https://zine.wilderworld.com/wilder-token/"
                       className="text-gray-300 hover:text-white text-base leading-6"
@@ -27,7 +27,7 @@ export default function Footer() {
                     >
                       LOOT Token
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://zine.wilderworld.com"
@@ -35,6 +35,15 @@ export default function Footer() {
                       target="_blank"
                     >
                       Zine
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://pn2nq2l5rqu.typeform.com/to/KHl0tR1I"
+                      className="text-gray-300 hover:text-white text-base leading-6"
+                      target="_blank"
+                    >
+                      Contact
                     </a>
                   </li>
                   {/* <li>
@@ -79,7 +88,7 @@ export default function Footer() {
                       Terms &amp; Conditions
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="https://pn2nq2l5rqu.typeform.com/to/KHl0tR1I"
                       className="text-gray-300 hover:text-white text-base leading-6"
@@ -87,7 +96,7 @@ export default function Footer() {
                     >
                       Contact
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

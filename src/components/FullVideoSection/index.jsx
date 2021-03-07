@@ -34,7 +34,7 @@ export default function FullVideoSection() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/KU7Sj-RHGYo?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
+                      src="https://www.youtube.com/embed/oR1KAPBqIug?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
