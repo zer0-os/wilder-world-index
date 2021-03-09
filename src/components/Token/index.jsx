@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import LazyLoad from 'react-lazyload';
 
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";
@@ -53,17 +54,19 @@ export default function Intro() {
           <div className="mt-16">
             <div className="grid grid-cols-1 lg:grid-cols-5">
               <div className="flex col-span-2 items-center justify-center p-4">
-                <iframe
-                  id={checked ? "c793fb18-591d-4e50-8ea8-660cb5bebd26" : "9ed8acea-d858-44f7-9769-8c85c267750d"}
-                  src={
-                    checked
-                      ? "https://www.vectary.com/viewer/v1/?model=c793fb18-591d-4e50-8ea8-660cb5bebd26&env=studio3"
-                      : "https://www.vectary.com/viewer/v1/?model=9ed8acea-d858-44f7-9769-8c85c267750d&env=studio3"
-                  }
-                  frameBorder="0"
-                  className="w-full h-full rounded-md"
-                ></iframe>
-                {/* <Coin /> */}
+                <LazyLoad height={300} once offset={100}>
+                  <iframe
+                    id={checked ? "c793fb18-591d-4e50-8ea8-660cb5bebd26" : "9ed8acea-d858-44f7-9769-8c85c267750d"}
+                    src={
+                      checked
+                        ? "https://www.vectary.com/viewer/v1/?model=c793fb18-591d-4e50-8ea8-660cb5bebd26&env=studio3"
+                        : "https://www.vectary.com/viewer/v1/?model=9ed8acea-d858-44f7-9769-8c85c267750d&env=studio3"
+                    }
+                    frameBorder="0"
+                    className="w-full h-full rounded-md"
+                  ></iframe>
+                  {/* <Coin /> */}
+                </LazyLoad>
               </div>
               {!checked && (
                 <div className="col-span-3 py-4 lg:pl-8">

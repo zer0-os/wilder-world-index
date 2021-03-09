@@ -4,6 +4,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { RiPlayMiniFill } from "react-icons/ri";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import LazyLoad from 'react-lazyload';
 
 import Section from "components/Layout/Section";
 
@@ -34,7 +35,7 @@ export default function FullVideoSection() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/oR1KAPBqIug?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
+                      src="https://www.youtube.com/embed/RWJzKGkmcPE?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -54,9 +55,11 @@ export default function FullVideoSection() {
       </div> */}
           <div className="relative mt-16">
             <CardHolder className="aspect-w-16 aspect-h-9 flex items-center justify-center w-full rounded-3xl overflow-hidden">
-              <div className="absolute w-full h-full rounded-3xl overflow-hidden">
-                <video src="/assets/video/preview.mp4" autoPlay loop muted className="" />
-              </div>
+              <LazyLoad height={300} once offset={100}>
+                <div className="absolute w-full h-full rounded-3xl overflow-hidden">
+                  <video src="/assets/video/preview.mp4" autoPlay loop muted className="" />
+                </div>
+              </LazyLoad>
               <div
                 className="content-glow-hard bg-gradient flex items-center justify-center mx-auto my-auto w-24 h-24 rounded-full cursor-pointer transform-gpu scale-100 hover:scale-110 transition-all duration-200"
                 onClick={(e) => setShowVideo(true)}

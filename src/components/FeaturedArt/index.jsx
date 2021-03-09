@@ -1,4 +1,5 @@
 import Fade from "react-reveal/Fade";
+import LazyLoad from 'react-lazyload';
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";
 
@@ -60,12 +61,12 @@ const rails = [
       source: "/assets/art/falreng/art.png",
       type: "image",
     },
-    {
-      author: "@reuko__",
-      avatar: "/assets/art/reuko__/profile.jpg",
-      source: "/assets/art/reuko__/art.mp4",
-      type: "video",
-    },
+    // {
+    //   author: "@reuko__",
+    //   avatar: "/assets/art/reuko__/profile.jpg",
+    //   source: "/assets/art/reuko__/art.mp4",
+    //   type: "video",
+    // },
   ],
   [
     {
@@ -122,12 +123,12 @@ const rails = [
       source: "/assets/art/rank.sss/art.mp4",
       type: "video",
     },
-    {
-      author: "@vl.graphics",
-      avatar: "/assets/art/vl.graphics/profile.jpg",
-      source: "/assets/art/vl.graphics/art.mp4",
-      type: "video",
-    },
+    // {
+    //   author: "@vl.graphics",
+    //   avatar: "/assets/art/vl.graphics/profile.jpg",
+    //   source: "/assets/art/vl.graphics/art.mp4",
+    //   type: "video",
+    // },
   ],
 ];
 
@@ -148,8 +149,12 @@ export default function Intro() {
             <div className="text-lg">Start building your collection from the world's best artists.</div>
           </div>
           <div className="mt-16">
-            <HorizontalRail direction="left" id="1" speed={120} content={rails[0]} />
-            <HorizontalRail direction="right" id="2" speed={120} content={rails[1]} />
+            <LazyLoad height={300} once offset={100}>
+              <HorizontalRail direction="left" id="1" speed={120} content={rails[0]} />
+            </LazyLoad>
+            <LazyLoad height={300} once offset={100}>
+              <HorizontalRail direction="right" id="2" speed={120} content={rails[1]} />
+            </LazyLoad>
             {/* <HorizontalRail direction="left" id="3" speed={30} /> */}
             {/* <HorizontalRail direction="right" id="4" speed={40} /> */}
           </div>
