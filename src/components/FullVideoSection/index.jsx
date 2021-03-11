@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { RiPlayMiniFill } from "react-icons/ri";
@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import LazyLoad from 'react-lazyload';
 
 import Section from "components/Layout/Section";
+import useKeyPress from "hooks/useKeyPress";
 
 const CardHolder = styled.div`
   filter: drop-shadow(0px 0px 12px rgba(141, 87, 224, 0.6));
@@ -14,6 +15,14 @@ const CardHolder = styled.div`
 
 export default function FullVideoSection() {
   const [showVideo, setShowVideo] = useState(false);
+  const pressEsc = useKeyPress(27); //esc
+
+  useEffect(() => {
+    console.log(pressEsc);
+    if (pressEsc && showVideo) {
+      setShowVideo(false);
+    }
+  }, [pressEsc, showVideo]);
 
   return (
     <Section maxSize="max-w-5xl" className="">
@@ -26,26 +35,24 @@ export default function FullVideoSection() {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        {(ref) => (
-          <div ref={ref} className="fixed z-50 bottom-0 left-0 right-0 top-0">
-            <div className="z-50 flex items-center justify-center w-screen h-screen bg-black bg-opacity-75">
-              <div className="relative w-full max-w-screen-xl">
-                <OutsideClickHandler onOutsideClick={(e) => setShowVideo(false)}>
-                  <div className="aspect-w-16 aspect-h-9">
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src="https://www.youtube.com/embed/RWJzKGkmcPE?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </OutsideClickHandler>
-              </div>
+        <div className="fixed z-50 bottom-0 left-0 right-0 top-0">
+          <div className="z-50 flex items-center justify-center w-screen h-screen bg-black bg-opacity-75">
+            <div className="relative w-full" style={{ maxWidth: "80vw" }}>
+              <OutsideClickHandler onOutsideClick={(e) => setShowVideo(false)}>
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/RWJzKGkmcPE?autoplay=1&mute=0&controls=1&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </OutsideClickHandler>
             </div>
           </div>
-        )}
+        </div>
       </Transition>
       <Fade bottom cascade>
         <div className="z-50">
