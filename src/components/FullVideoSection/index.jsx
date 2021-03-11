@@ -4,7 +4,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { RiPlayMiniFill } from "react-icons/ri";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import useKeyPress from "hooks/useKeyPress";
@@ -18,7 +18,6 @@ export default function FullVideoSection() {
   const pressEsc = useKeyPress(27); //esc
 
   useEffect(() => {
-    console.log(pressEsc);
     if (pressEsc && showVideo) {
       setShowVideo(false);
     }

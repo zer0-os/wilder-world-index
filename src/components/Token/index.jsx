@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";

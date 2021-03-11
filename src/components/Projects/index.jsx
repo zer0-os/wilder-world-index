@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";
@@ -23,7 +23,7 @@ const ProjectsContainer = styled(Section)`
   }
 `;
 
-export default function Projects({ }) {
+export default function Projects({}) {
   return (
     <ProjectsContainer maxSize="max-w-4xl" name="artists">
       <Fade bottom cascade>
