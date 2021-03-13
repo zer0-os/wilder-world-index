@@ -62,10 +62,10 @@ export default function SingleCard({ source, userPhoto, author, size = "w-64 h-6
             <img src={userPhoto} className="content-glow-hard w-8 h-8 rounded-full" />
             <span className="text-glow-hard ml-2 text-gray-200">{author}</span>
           </div>
-          <div className="text-right text-lg">
+          {/* <div className="text-right text-lg">
             <span className="color-white mr-1">{price.toFixed(2)}</span>
             <span className="text-gray-300">WILD</span>
-          </div>
+          </div> */}
         </TextHolder>
       </div>
     </CardHolder>

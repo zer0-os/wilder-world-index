@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";
@@ -54,7 +54,7 @@ export default function Intro() {
           <div className="mt-16">
             <div className="grid grid-cols-1 lg:grid-cols-5">
               <div className="flex col-span-2 items-center justify-center p-4">
-                <LazyLoad height={300} once offset={100}>
+                <LazyLoad height={300} once offset={100} className="w-full h-full">
                   <iframe
                     id={checked ? "c793fb18-591d-4e50-8ea8-660cb5bebd26" : "9ed8acea-d858-44f7-9769-8c85c267750d"}
                     src={
