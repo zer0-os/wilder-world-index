@@ -7,6 +7,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 
 import LinkButton from "components/LinkButton";
+import LoadedImage from "utils/compositeLoader/elements/LoadedImage";
 
 const HeaderContainer = styled.div`
   &::before {
@@ -62,7 +63,11 @@ export default function Header({ videoNumber }) {
           <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a href="/" aria-label="Home">
-                <img className="content-glow-hard inline-block w-auto h-8 sm:h-10" src="/animated.svg" alt="Logo" />
+                <LoadedImage
+                  className="content-glow-hard inline-block w-auto h-8 sm:h-10"
+                  resource="/animated.svg"
+                  alt="Logo"
+                />
               </a>
               <div className="flex items-center -mr-2 md:hidden">
                 <button

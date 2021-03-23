@@ -2,6 +2,10 @@ import { useState } from "react";
 import styled from "styled-components";
 import useInterval from "@use-it/interval";
 
+import LoadedVideo from "utils/compositeLoader/elements/LoadedVideo";
+import LoadedImage from "utils/compositeLoader/elements/LoadedImage";
+import { useResource } from "utils/compositeLoader";
+
 const TextHolder = styled.div`
   background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   position: absolute;
@@ -28,6 +32,7 @@ const CardHolder = styled.div`
 
 export default function SingleCard({ source, userPhoto, author, size = "w-64 h-64", type }) {
   const [price, setPrice] = useState(30 * Math.random());
+  const artistImage = useResource(type === "video" ? "/favicon.png" : source);
 
   useInterval(() => {
     setPrice((price) => Math.min(100, Math.max(0, price + (Math.random() > 0.5 ? 0.01 : -0.01))));
@@ -40,26 +45,25 @@ export default function SingleCard({ source, userPhoto, author, size = "w-64 h-6
       <div
         className="w-full h-full rounded-md overflow-hidden transform-gpu transition-all duration-200"
         style={{
-          background: `url('${type === "video" ? "" : source}') #000 no-repeat 0 / cover`,
+          background: `url('${artistImage}') #000 no-repeat 0 / cover`,
         }}
       >
         {type === "video" && (
           <div className="absolute z-0 w-full h-full overflow-hidden">
-            <video
+            <LoadedVideo
               className="absolute left-1/2 top-1/2 max-w-full max-h-full"
               style={{ transform: "translate(-50%, -50%)", maxWidth: "unset" }}
               autoPlay
               loop
               muted
               playsInline
-            >
-              <source src={source} type="video/mp4" />
-            </video>
+              resource={source}
+            />
           </div>
         )}
         <TextHolder className="flex items-center justify-between p-3 pt-8">
           <div className="flex items-center justify-start">
-            <img src={userPhoto} className="content-glow-hard w-8 h-8 rounded-full" />
+            <LoadedImage resource={userPhoto} className="content-glow-hard w-8 h-8 rounded-full" />
             <span className="text-glow-hard ml-2 text-gray-200">{author}</span>
           </div>
           {/* <div className="text-right text-lg">

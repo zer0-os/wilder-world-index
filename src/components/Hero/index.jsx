@@ -6,6 +6,8 @@ import { isMobile } from "react-device-detect";
 import Header from "components/Layout/Header";
 import LinkButton from "components/LinkButton";
 
+import LoadedVideo from "utils/compositeLoader/elements/LoadedVideo";
+
 const HeroPage = styled.div`
   background: #111116 no-repeat center center / cover;
 
@@ -31,7 +33,6 @@ export default function Hero() {
 
   useEffect(() => {
     const pick = Math.floor(Math.random() * videos.length);
-    console.log(pick);
     setVideoNumber(pick);
   }, []);
 
@@ -39,16 +40,15 @@ export default function Hero() {
     <HeroPage className="min-h-screen">
       {videoNumber !== null && !isMobile && (
         <div className="absolute z-0 w-full h-full opacity-40 overflow-hidden">
-          <video
+          <LoadedVideo
+            resource={`/assets/video/${videos[videoNumber]}`}
             className="absolute left-1/2 top-1/2 min-w-full max-w-none min-h-full"
             style={{ transform: "translate(-50%, -50%)" }}
             autoPlay
             loop
             muted
             playsInline
-          >
-            <source src={`/assets/video/${videos[videoNumber]}`} type="video/mp4" />
-          </video>
+          />
         </div>
       )}
       <Header videoNumber={videoNumber} />

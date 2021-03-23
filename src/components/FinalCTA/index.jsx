@@ -3,10 +3,13 @@ import Fade from "react-reveal/Fade";
 import { AiOutlineLoading, AiOutlineCheck, AiOutlineExclamation } from "react-icons/ai";
 
 import Section from "components/Layout/Section";
+import { useResource } from "utils/compositeLoader";
 
 export default function FinalCTA() {
   const [inpu, setInpu] = useState("");
   const [subs, setSubs] = useState(0);
+
+  const wilderImage = useResource("/assets/background/wilder.png");
 
   const signUp = async (e) => {
     e.preventDefault();
@@ -40,7 +43,7 @@ export default function FinalCTA() {
           <div
             className="rounded-lg overflow-hidden"
             style={{
-              background: `url('/assets/background/wilder.png') #000 no-repeat 0 / cover`,
+              background: `url('${wilderImage}') #000 no-repeat 0 / cover`,
             }}
           >
             <div className="p-6 md:p-12">

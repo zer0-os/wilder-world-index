@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import LinkButton from "components/LinkButton";
@@ -34,42 +33,34 @@ export default function Projects({}) {
             <div className="text-lg">Community-owned, fully decentralized, liquid NFT market and social platform.</div>
           </div>
           <div className="grid gap-8 grid-cols-1 mt-16 md:grid-cols-2">
-            <LazyLoad height={300} once offset={100}>
-              <div className="">
-                <SingleProject
-                  title="Sell Digital Art"
-                  subtitle="Easily mint NFTs directly from your wallet."
-                  image="/assets/icons/art.svg"
-                />
-              </div>
-            </LazyLoad>
-            <LazyLoad height={300} once offset={100}>
-              <div className="">
-                <SingleProject
-                  title="No Fees"
-                  subtitle="No platform fees. Set your own price and parameters."
-                  image="/assets/icons/2762657.svg"
-                />
-              </div>
-            </LazyLoad>
-            <LazyLoad height={300} once offset={100}>
-              <div className="">
-                <SingleProject
-                  title="Decentralized"
-                  subtitle="No centralized oversight or data collection."
-                  image="/assets/icons/1958738.svg"
-                />
-              </div>
-            </LazyLoad>
-            <LazyLoad height={300} once offset={100}>
-              <div className="">
-                <SingleProject
-                  title="Community Owned"
-                  subtitle="Receive ownership in Wilder World via WILD &amp; LOOT."
-                  image="/assets/icons/2618488.svg"
-                />
-              </div>
-            </LazyLoad>
+            <div className="">
+              <SingleProject
+                title="Sell Digital Art"
+                subtitle="Easily mint NFTs directly from your wallet."
+                image="/assets/icons/art.svg"
+              />
+            </div>
+            <div className="">
+              <SingleProject
+                title="No Fees"
+                subtitle="No platform fees. Set your own price and parameters."
+                image="/assets/icons/2762657.svg"
+              />
+            </div>
+            <div className="">
+              <SingleProject
+                title="Decentralized"
+                subtitle="No centralized oversight or data collection."
+                image="/assets/icons/1958738.svg"
+              />
+            </div>
+            <div className="">
+              <SingleProject
+                title="Community Owned"
+                subtitle="Receive ownership in Wilder World via WILD &amp; LOOT."
+                image="/assets/icons/2618488.svg"
+              />
+            </div>
           </div>
           <div className="mt-16">
             <LinkButton

@@ -1,5 +1,7 @@
 import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
 
+import LoadedImage from "utils/compositeLoader/elements/LoadedImage";
+
 export default function Footer() {
   return (
     <footer className="">
@@ -57,7 +59,7 @@ export default function Footer() {
           </div>
           <div className="grid gap-8 grid-cols-1">
             <div className="p-12">
-              <img src="/animated.svg" className="content-glow w-full h-full max-h-52" />
+              <LoadedImage resource="/animated.svg" className="content-glow w-full h-full max-h-52" />
             </div>
           </div>
           <div className="grid gap-8 grid-cols-1 text-center md:text-right">

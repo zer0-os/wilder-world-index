@@ -4,10 +4,11 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { RiPlayMiniFill } from "react-icons/ri";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import LazyLoad from "react-lazyload";
 
 import Section from "components/Layout/Section";
 import useKeyPress from "hooks/useKeyPress";
+
+import LoadedVideo from "utils/compositeLoader/elements/LoadedVideo";
 
 const CardHolder = styled.div`
   filter: drop-shadow(0px 0px 12px rgba(141, 87, 224, 0.6));
@@ -61,11 +62,9 @@ export default function FullVideoSection() {
       </div> */}
           <div className="relative mt-16">
             <CardHolder className="aspect-w-16 aspect-h-9 flex items-center justify-center w-full rounded-3xl overflow-hidden">
-              <LazyLoad height={300} once offset={100}>
-                <div className="absolute w-full h-full rounded-3xl overflow-hidden">
-                  <video src="/assets/video/preview.mp4" autoPlay loop muted className="" />
-                </div>
-              </LazyLoad>
+              <div className="absolute w-full h-full rounded-3xl overflow-hidden">
+                <LoadedVideo resource="/assets/video/preview.mp4" autoPlay loop muted className="" />
+              </div>
               <div
                 className="content-glow-hard bg-gradient flex items-center justify-center mx-auto my-auto w-24 h-24 rounded-full cursor-pointer transform-gpu scale-100 hover:scale-110 transition-all duration-200"
                 onClick={(e) => setShowVideo(true)}

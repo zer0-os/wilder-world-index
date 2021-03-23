@@ -10,6 +10,8 @@ import LiquidArtMarket from "components/LiquidArtMarket";
 import Token from "components/Token";
 import FullVideoSection from "components/FullVideoSection";
 
+import { LoaderStore, Loader } from "utils/compositeLoader";
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -17,7 +19,8 @@ export default function Home() {
         <title>Wilder World</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <LoaderStore>
+        <Loader />
         <Hero />
         <FullVideoSection />
         <FeaturedArt />
@@ -26,7 +29,7 @@ export default function Home() {
         <LiquidArtMarket />
         <FinalCTA />
         <Footer />
-      </div>
+      </LoaderStore>
     </div>
   );
 }

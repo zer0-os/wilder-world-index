@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { motion, useSpring, useMotionValue, useTransform } from "framer-motion";
 import { interpolate } from "@popmotion/popcorn";
 
+import LoadedImage from "utils/compositeLoader/elements/LoadedImage";
+
 const Container = styled(motion.div).attrs({
   className: "w-full max-w-full rounded-md m-auto",
 })`
@@ -25,13 +27,6 @@ const Content = styled(motion.div).attrs({
   //   #c471ed,
   //   #12c2e9
   // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-`;
-
-const Image = styled.div.attrs({
-  className: "absolute top-0 left-0 right-0 bottom-0 bg-cover rounded-md",
-})`
-  transform: translateZ(0);
-  background-image: url(https://vyse.in/images/bg.png);
 `;
 
 const Gradient = styled(motion.div).attrs({
@@ -122,7 +117,7 @@ export default function Card({ height = 300, width = 450, title = "", subtitle =
         <Content>
           {/* <Image /> */}
           <div className="p-8">
-            <img src={image} className="content-glow-hard m-12 mx-auto w-20 h-20" />
+            <LoadedImage resource={image} className="content-glow-hard m-12 mx-auto w-20 h-20" />
             <div className="text-xl font-bold lg:text-2xl">{title}</div>
             <div className="text-md mt-2 leading-tight">{subtitle}</div>
           </div>
