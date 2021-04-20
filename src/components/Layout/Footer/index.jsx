@@ -47,11 +47,6 @@ export default function Footer() {
                       Contact
                     </a>
                   </li>
-                  {/* <li>
-                    <a href="#" className="text-gray-300 hover:text-white text-base leading-6">
-                      Zer0
-                    </a>
-                  </li> */}
                 </ul>
               </div>
             </div>
