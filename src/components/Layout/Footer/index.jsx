@@ -1,4 +1,5 @@
 import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -104,18 +105,26 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 sm:flex sm:items-center sm:justify-between">
           <div className="flex justify-center space-x-6 sm:order-2">
-            <a href="https://www.instagram.com/wilder.world/" className="hover:text-gray-300 text-gray-400">
+            <a href="https://t.me/wilder_world" target="_blank" className="hover:text-gray-300 text-gray-400">
+              <span className="sr-only">Telegram</span>
+              <FaTelegramPlane className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/wilder.world/"
+              target="_blank"
+              className="hover:text-gray-300 text-gray-400"
+            >
               <span className="sr-only">Instagram</span>
               <AiOutlineInstagram className="w-6 h-6" />
             </a>
-            <a href="https://twitter.com/wilderworld_" className="hover:text-gray-300 text-gray-400">
+            <a href="https://twitter.com/wilderworld_" target="_blank" className="hover:text-gray-300 text-gray-400">
               <span className="sr-only">Twitter</span>
               <AiOutlineTwitter className="w-6 h-6" />
             </a>
           </div>
           <p className="mt-8 text-center text-gray-400 text-base leading-6 sm:order-1 sm:mt-0">
             Powered by{" "}
-            <a href="https://zer0.io" className="hover:text-gray-300 text-gray-400">
+            <a href="https://zer0.io" className="hover:text-gray-300 text-gray-400" target="_blank">
               <span>Zer0</span>
             </a>
           </p>
