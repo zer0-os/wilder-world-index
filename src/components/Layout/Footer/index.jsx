@@ -11,7 +11,6 @@ export default function Footer() {
           <div className="grid gap-8 grid-cols-1 text-center md:text-left">
             <div className="sm:grid sm:gap-8 sm:grid-cols-1">
               <div>
-                {/* <h4 className="text-gray-400 text-sm font-semibold tracking-wider leading-5 uppercase">Solutions</h4> */}
                 <ul className="mt-4 space-y-4">
                   {/* <li>
                     <a
