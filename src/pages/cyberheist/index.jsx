@@ -2,14 +2,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div
-      className="h-full min-h-screen overflow-hidden"
-      style={{
-        backgroundImage: "url('/assets/cyberheist/bg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-      }}
-    >
+    <>
       <Head>
         <title>CyberHeist - Wilder World</title>
         <link rel="icon" href="/favicon.ico" />
@@ -28,14 +21,23 @@ export default function Home() {
         <meta property="fb:app_id" content="152351391599356" />
         <meta property="og:description" content="The journey begins" />
       </Head>
-      <div className="flex items-center justify-center">
-        <div className="mt-16 mx-4 w-full" style={{ maxWidth: "400px" }}>
-          <a className="e-widget no-button generic-loader" href="https://gleam.io/0jaiQ/cyberheist" rel="nofollow">
-            #CyberHeist
-          </a>
-          <script type="text/javascript" src="https://widget.gleamjs.io/e.js" async></script>
-        </div>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          html {
+            overflow: hidden;
+          }
+          `,
+        }}
+      />
+      <div className="w-full h-full min-h-screen">
+        <iframe
+          src="https://gleam.io/0jaiQ/cyberheist"
+          frameBorder="0"
+          allowFullScreen
+          className="absolute w-full h-full"
+        ></iframe>
       </div>
-    </div>
+    </>
   );
 }
