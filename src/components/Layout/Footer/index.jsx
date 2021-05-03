@@ -1,4 +1,4 @@
-import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineInstagram, AiFillMediumCircle } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
@@ -103,6 +103,10 @@ export default function Footer() {
             <a href="https://t.me/wilder_world" target="_blank" className="hover:text-gray-300 text-gray-400">
               <span className="sr-only">Telegram</span>
               <FaTelegramPlane className="w-6 h-6" />
+            </a>
+            <a href="https://medium.com/@WilderWorld" target="_blank" className="hover:text-gray-300 text-gray-400">
+              <span className="sr-only">Medium</span>
+              <AiFillMediumCircle className="w-6 h-6" />
             </a>
             <a
               href="https://www.instagram.com/wilder.world/"
