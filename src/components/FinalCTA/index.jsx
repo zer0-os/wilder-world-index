@@ -40,7 +40,7 @@ export default function FinalCTA() {
           <div
             className="rounded-lg overflow-hidden"
             style={{
-              background: `url('/assets/background/wilder.png') #000 no-repeat 0 / cover`,
+              background: `url('/assets/background/wilder.jpg') #000 no-repeat 0 / cover`,
             }}
           >
             <div className="p-6 md:p-12">

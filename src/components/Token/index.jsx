@@ -25,13 +25,10 @@ const SingleBox = styled.div.attrs({
   }
 `;
 
-const SingleItem = ({ title, subtitle }) => {
+export const SingleItem = ({ title, subtitle }) => {
   return (
     <SingleBox className="relative my-4 p-0.5 rounded-md">
-      <div
-        className="hover:box-glow px-6 py-4 text-left border-2 border-wilder-purple border-opacity-20 hover:border-opacity-40 rounded-md transition-all duration-200"
-        style={{ background: "#121b23" }}
-      >
+      <div className="hover:box-glow px-6 py-4 text-left bg-gray-800 border-2 border-wilder-purple border-opacity-20 hover:border-opacity-40 rounded-md transition-all duration-200">
         <div className="text-xl lg:text-2xl">{title}</div>
         <div className="lg:text-md mb-1 mt-2 text-sm font-light leading-tight">{subtitle}</div>
       </div>

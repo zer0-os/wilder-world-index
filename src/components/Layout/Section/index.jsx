@@ -1,6 +1,6 @@
 export default function Section({
   children,
-  maxSize = "max-w-5xl",
+  maxSize = "max-w-6xl",
   secondaryClasses = "px-12",
   className = "",
   ...rest

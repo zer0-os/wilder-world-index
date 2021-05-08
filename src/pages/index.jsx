@@ -9,6 +9,7 @@ import FeaturedArt from "components/FeaturedArt";
 import LiquidArtMarket from "components/LiquidArtMarket";
 import Token from "components/Token";
 import FullVideoSection from "components/FullVideoSection";
+import PoweredByNFTs from "components/PoweredByNFT";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <FeaturedArt />
         <Projects />
         <Token />
+        <PoweredByNFTs />
         <LiquidArtMarket />
         <FinalCTA />
         <Footer />

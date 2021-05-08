@@ -22,7 +22,7 @@ const rails = [
     {
       author: "@brellias",
       avatar: "/assets/art/brellias/profile.jpg",
-      source: "/assets/art/brellias/art.png",
+      source: "/assets/art/brellias/art.jpg",
       type: "image",
     },
     {
@@ -58,7 +58,7 @@ const rails = [
     {
       author: "@falreng",
       avatar: "/assets/art/falreng/profile.jpg",
-      source: "/assets/art/falreng/art.png",
+      source: "/assets/art/falreng/art.jpg",
       type: "image",
     },
     // {
@@ -84,7 +84,7 @@ const rails = [
     {
       author: "@frenerdesign",
       avatar: "/assets/art/frenerdesign/profile.jpg",
-      source: "/assets/art/frenerdesign/art.png",
+      source: "/assets/art/frenerdesign/art.jpg",
       type: "image",
     },
     {
@@ -108,7 +108,7 @@ const rails = [
     {
       author: "@nullject",
       avatar: "/assets/art/nullject/profile.jpg",
-      source: "/assets/art/nullject/art.png",
+      source: "/assets/art/nullject/art.jpg",
       type: "image",
     },
     {
