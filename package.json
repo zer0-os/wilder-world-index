@@ -18,6 +18,7 @@
     "@popmotion/popcorn": "^0.4.4",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@use-it/interval": "^1.0.0",
+    "fathom-client": "^3.0.0",
     "framer-motion": "^3.3.0",
     "next": "^10.0.0",
     "polished": "^4.1.0",
