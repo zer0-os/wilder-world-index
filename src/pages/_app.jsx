@@ -8,9 +8,10 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    Fathom.load("YOUR_FATHOM_TRACKING_CODE", {
+    Fathom.load("ZZNCORJZ", {
       includedDomains: ["wilderworld.com", "www.wilderworld.com"],
       url: "https://parrotfish.wilderworld.com/script.js",
+      honorDNT: false,
     });
 
     function onRouteChangeComplete() {
