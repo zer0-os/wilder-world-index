@@ -6,4 +6,8 @@ const withPlugins = require("next-compose-plugins");
 
 module.exports = withPlugins([
   [withBundleAnalyzer, {}],
-]);
+], {
+  future: {
+    webpack5: true
+  }
+});
