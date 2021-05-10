@@ -11,16 +11,16 @@ export default function Footer() {
               <div>
                 {/* <h4 className="text-gray-400 text-sm font-semibold tracking-wider leading-5 uppercase">Solutions</h4> */}
                 <ul className="mt-4 space-y-4">
-                  {/* <li>
+                  <li>
                     <a
-                      href="https://zine.wilderworld.com/wilder-token/"
+                      href="https://etherscan.io/address/0x2a3bff78b79a009976eea096a51a948a3dc00e34"
                       className="text-gray-300 hover:text-white text-base leading-6"
                       target="_blank"
                     >
-                      WILD Token
+                      WILD Token Contract
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="https://zine.wilderworld.com/loot-token/"
                       className="text-gray-300 hover:text-white text-base leading-6"
