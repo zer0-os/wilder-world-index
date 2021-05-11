@@ -24,7 +24,7 @@ export default function Home() {
         <FeaturedArt />
         <Projects />
         <Token />
-        <PoweredByNFTs />
+        {/* <PoweredByNFTs /> */}
         <LiquidArtMarket />
         <FinalCTA />
         <Footer />
