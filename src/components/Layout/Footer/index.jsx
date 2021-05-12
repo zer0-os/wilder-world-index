@@ -116,7 +116,7 @@ export default function Footer() {
               <span className="sr-only">Instagram</span>
               <AiOutlineInstagram className="w-6 h-6" />
             </a>
-            <a href="https://twitter.com/wilderworld_" target="_blank" className="hover:text-gray-300 text-gray-400">
+            <a href="https://twitter.com/wilderworld" target="_blank" className="hover:text-gray-300 text-gray-400">
               <span className="sr-only">Twitter</span>
               <AiOutlineTwitter className="w-6 h-6" />
             </a>
