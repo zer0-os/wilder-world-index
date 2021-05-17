@@ -96,24 +96,24 @@ export default function Intro() {
               )}
             </div>
           </div>
-          {/* <div className="mt-16">
+          <div className="mt-16">
             <LinkButton
               className="text-glow box-glow"
-              href="https://zine.wilderworld.com/subscribe/"
+              href="https://app.uniswap.org/#/swap?inputCurrency=0x2a3bff78b79a009976eea096a51a948a3dc00e34&outputCurrency=ETH&use=V2"
               size="large"
               style="2"
             >
-              Buy WILD
+              Get $WILD
             </LinkButton>
-            <LinkButton
+            {/* <LinkButton
               className="text-glow box-glow"
               href="https://zine.wilderworld.com/subscribe/"
               size="large"
               style="2"
             >
               Buy LOOT
-            </LinkButton>
-          </div> */}
+            </LinkButton> */}
+          </div>
         </div>
       </Fade>
     </Section>

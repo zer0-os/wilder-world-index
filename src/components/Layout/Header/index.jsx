@@ -98,11 +98,11 @@ export default function Header({ videoNumber }) {
               <LinkButton
                 // style={(videoNumber ?? "white").toString()}
                 style="2"
-                href="https://zine.wilderworld.com/subscribe/"
+                href="https://app.uniswap.org/#/swap?inputCurrency=0x2a3bff78b79a009976eea096a51a948a3dc00e34&outputCurrency=ETH&use=V2"
                 className="text-glow box-glow"
                 size="small"
               >
-                Launch App
+                Get $WILD
               </LinkButton>
             </span>
           </div>
@@ -158,12 +158,12 @@ export default function Header({ videoNumber }) {
                 </div>
                 <div>
                   <a
-                    href="https://zine.wilderworld.com/subscribe/"
+                    href="https://app.uniswap.org/#/swap?inputCurrency=0x2a3bff78b79a009976eea096a51a948a3dc00e34&outputCurrency=ETH&use=V2"
                     className="block px-5 py-3 w-full text-center text-gray-300 font-medium border-t border-white focus:outline-none transition duration-150 ease-in-out"
                     role="menuitem"
                     target="_blank"
                   >
-                    Launch App
+                    Get $WILD
                   </a>
                 </div>
               </div>

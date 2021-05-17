@@ -8,18 +8,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:url" content="https://www.wilderworld.com/cyberheist/" />
-        <meta property="og:title" content="#CyberHeist by Wilder World" />
+        <meta property="og:title" content="Cyber Truck #CyberHeist by Wilder World" />
         <meta
           property="og:image"
-          content="https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1753749/jf9pyVW3Z2WXzHPS/cyber-heist-.jpeg"
+          content="https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1753749/otrEU3unasOvnXEn/cyber-truck---under-2-mb.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image:src"
-          content="https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1753749/jf9pyVW3Z2WXzHPS/cyber-heist-.jpeg"
+          content="https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1753749/otrEU3unasOvnXEn/cyber-truck---under-2-mb.png"
         />
         <meta property="fb:app_id" content="152351391599356" />
-        <meta property="og:description" content="Complete the heists and win limited editions Wilder NFTs" />
+        <meta
+          property="og:description"
+          content="💰 Complete the heists for your chance to win 💰 💎 1/9 Limited edition #CyberHeist NFTs 💎 🤖 Cyber Truck that you can cruise around in the Metaverse 🤖"
+        />
       </Head>
       <style
         dangerouslySetInnerHTML={{
@@ -32,7 +35,7 @@ export default function Home() {
       />
       <div className="w-full h-full min-h-screen">
         <iframe
-          src="https://gleam.io/r6iil/cyberheist"
+          src="https://gleam.io/rmBgy/cyberheist"
           frameBorder="0"
           allowFullScreen
           className="absolute w-full h-full"
