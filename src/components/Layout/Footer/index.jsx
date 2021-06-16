@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="grid gap-8 grid-cols-1 text-center md:text-left">
             <div className="sm:grid sm:gap-8 sm:grid-cols-1">
               <div>
-                {/* <h4 className="text-gray-400 text-sm font-semibold tracking-wider leading-5 uppercase">Solutions</h4> */}
+                {/* <h4 className="text-sm font-semibold leading-5 tracking-wider text-gray-400 uppercase">Solutions</h4> */}
                 <ul className="mt-4 space-y-4">
                   <li>
                     <a
@@ -17,13 +17,22 @@ export default function Footer() {
                       className="text-gray-300 hover:text-white text-base leading-6"
                       target="_blank"
                     >
-                      WILD Token Contract
+                      WILD Token Contract (ETH)
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://bscscan.com/address/0x089165ac9a7bf61833da86268f34a01652543466"
+                      className="text-gray-300 hover:text-white text-base leading-6"
+                      target="_blank"
+                    >
+                      WILD Token Contract (BSC)
                     </a>
                   </li>
                   {/* <li>
                     <a
                       href="https://zine.wilderworld.com/loot-token/"
-                      className="text-gray-300 hover:text-white text-base leading-6"
+                      className="text-base leading-6 text-gray-300 hover:text-white"
                       target="_blank"
                     >
                       LOOT Token
@@ -38,15 +47,6 @@ export default function Footer() {
                       Zine
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://pn2nq2l5rqu.typeform.com/to/KHl0tR1I"
-                      className="text-gray-300 hover:text-white text-base leading-6"
-                      target="_blank"
-                    >
-                      Contact
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -59,13 +59,22 @@ export default function Footer() {
           <div className="grid gap-8 grid-cols-1 text-center md:text-right">
             <div className="sm:grid sm:gap-8 sm:grid-cols-1">
               <div className="mt-12 sm:mt-0">
-                {/* <h4 className="text-gray-400 text-sm font-semibold tracking-wider leading-5 uppercase">Support</h4> */}
+                {/* <h4 className="text-sm font-semibold leading-5 tracking-wider text-gray-400 uppercase">Support</h4> */}
                 <ul className="mt-4 space-y-4">
                   {/* <li>
-                    <a href="#" className="text-gray-300 hover:text-white text-base leading-6">
+                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
                       Guidelines
                     </a>
                   </li> */}
+                  <li>
+                    <a
+                      href="https://pn2nq2l5rqu.typeform.com/to/KHl0tR1I"
+                      className="text-gray-300 hover:text-white text-base leading-6"
+                      target="_blank"
+                    >
+                      Contact
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://zine.wilderworld.com/privacy-policy/"
@@ -87,7 +96,7 @@ export default function Footer() {
                   {/* <li>
                     <a
                       href="https://pn2nq2l5rqu.typeform.com/to/KHl0tR1I"
-                      className="text-gray-300 hover:text-white text-base leading-6"
+                      className="text-base leading-6 text-gray-300 hover:text-white"
                       target="_blank"
                     >
                       Contact
