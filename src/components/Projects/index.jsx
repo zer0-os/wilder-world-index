@@ -78,7 +78,7 @@ export default function Projects({}) {
               size="large"
               style="2"
             >
-              Apply Now
+              Apply as an Artist
             </LinkButton>
           </div>
         </div>

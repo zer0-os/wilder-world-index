@@ -73,19 +73,11 @@ export default function Hero() {
             </LinkButton> */}
               <LinkButton
                 className="text-glow box-glow"
-                href="https://pn2nq2l5rqu.typeform.com/to/kobQHc58"
+                href="https://zer0.io/a/invite/5HsCdVXy4q3E"
                 size="large"
                 style="2"
               >
-                Apply as an Artist
-              </LinkButton>
-              <LinkButton
-                className="text-glow box-glow"
-                href="https://pn2nq2l5rqu.typeform.com/to/V7uAhWcq"
-                size="large"
-                style="2"
-              >
-                Apply as a Collector
+                Join Our Community
               </LinkButton>
             </div>
           </div>

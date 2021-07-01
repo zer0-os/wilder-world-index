@@ -109,6 +109,14 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 sm:flex sm:items-center sm:justify-between">
           <div className="flex justify-center space-x-6 sm:order-2">
+            <a
+              href="https://zer0.io/a/invite/5HsCdVXy4q3E"
+              target="_blank"
+              className="hover:text-gray-300 text-gray-400"
+            >
+              <span className="sr-only">Zero</span>
+              <img src="/assets/images/zero.png" className="w-6 h-6 rounded-full" />
+            </a>
             <a href="https://t.me/wilder_world" target="_blank" className="hover:text-gray-300 text-gray-400">
               <span className="sr-only">Telegram</span>
               <FaTelegramPlane className="w-6 h-6" />
