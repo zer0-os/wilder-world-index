@@ -20,15 +20,6 @@ export default function Footer() {
                       WILD Token Contract (ETH)
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://bscscan.com/address/0x089165ac9a7bf61833da86268f34a01652543466"
-                      className="text-gray-300 hover:text-white text-base leading-6"
-                      target="_blank"
-                    >
-                      WILD Token Contract (BSC)
-                    </a>
-                  </li>
                   {/* <li>
                     <a
                       href="https://zine.wilderworld.com/loot-token/"
