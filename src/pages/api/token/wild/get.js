@@ -9,7 +9,7 @@ export default async (req, res) => {
   if (req.query.q === "totalSupply") {
     return res.status(200).send("500000000.000000000000000000");
   } else if (req.query.q === "circulatingSupply") {
-    return res.status(200).send("19425676.000000000000000000");
+    return res.status(200).send("44963612.810000000000000000");
   }
 
   return res.status(403).send("Invalid query");
