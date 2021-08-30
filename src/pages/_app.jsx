@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     Fathom.load("ZZNCORJZ", {
-      includedDomains: ["wilderworld.com", "www.wilderworld.com"],
+      includedDomains: ["wilderworld.com", "www.wilderworld.com", "info.wilderworld.com"],
       url: "https://parrotfish.wilderworld.com/script.js",
       honorDNT: false,
     });

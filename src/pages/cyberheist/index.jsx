@@ -7,7 +7,7 @@ export default function Home() {
         <title>#CyberHeist - Wilder World</title>
         <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:url" content="https://www.wilderworld.com/cyberheist/" />
+        <meta property="og:url" content="https://info.wilderworld.com/cyberheist/" />
         <meta property="og:title" content="Jake Paul&#39;s Lamborghini #CyberHeist" />
         <meta
           property="og:image"
