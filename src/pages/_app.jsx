@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    Fathom.load("ZZNCORJZ", {
+    Fathom.load("OGLICLUH", {
       includedDomains: ["wilderworld.com", "www.wilderworld.com", "info.wilderworld.com"],
       url: "https://parrotfish.wilderworld.com/script.js",
       honorDNT: false,
